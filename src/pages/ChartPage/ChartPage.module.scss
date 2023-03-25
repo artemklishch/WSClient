@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+.ChartPageWrapp {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .ChartPage {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      align-self: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    &__descr {
+      padding: 0 10px;
+    }
+
+    // media queries
+    @media (min-width: $mainBreakpoint) {
+      &__descr {
+        padding: 0 20px;
+      }
+    }
+  }
+  .spinner {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .notfound {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+}
