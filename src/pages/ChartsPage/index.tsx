@@ -4,15 +4,7 @@ import { useAppSelector } from "../../store/hooks";
 import { selectChartsData } from "../../store/chartsdata/chartSlice";
 import routes from "../../routes";
 import useChartWidthHook from "../../customHooks/useChartWidthHook";
-import {
-  ResponsiveContainer,
-  AreaChart,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Area,
-  Tooltip,
-} from "recharts";
+import { ResponsiveContainer } from "recharts";
 
 import Chart from "../../components/UI/Chart";
 import Spinner from "../../components/UI/Spinner";
