@@ -34,8 +34,7 @@ function App() {
     dispatch(setStartChartType());
     dispatch(getIntervalAction());
     socket.on("connect_error", (err: any) => {
-      console.log("Error happend", err.message);
-      dispatch(setIsError("Failed to get data"));
+      dispatch(setIsError("Failed to get data. Reload the page or try later!"));
       dispatch(setIsModalNotOpenClose(true));
       dispatch(startGettingCharts([]));
       socket.disconnect();
